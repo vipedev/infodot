@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Fonts -->
+        <!-- You can link to things like Google fonts here! -->
+
+        <!-- Bootstrap -->
+        <!-- Bootstrap is one of the world's most popular CSS frameworks, this is used to set styles for you and make responsive design simple, try it out in this site, it makes a big difference to the speed of site development -->
+        <link SameSite="None Secure" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script SameSite="None Secure" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script SameSite="None Secure" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <!-- This code connects you to the stylesheet 'style.css' this is where all the custom styling code is written, this is external so it can be cached for other pages and ensure fast load times across your site when you add new pages -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Favicons -->
+        <!-- Favicons are the small image icons that show up alongside the site title on your tab, you can generate these at https://favicon.io -->
+        <link rel="apple-touch-icon" sizes="180x180" SameSite="Strict" href="/asset/favicon/apple-touch-icon.png">
+        <link rel="icon"  sizes="32x32" SameSite="Strict" href="/asset/id/infodotlogo.png">
+        <link rel="icon"  sizes="16x16" SameSite="Strict" href="/asset/id/infodotlogo.png">
+        <!-- Webmanifests are not supported on autocode and so the file for this is only available on our GitHub version -->
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- This is the site meta data that is displayed in embeds on platforms like Discord when the site is linked! -->
+        <!-- Open Graph tags -->
+        <meta property="og:title" content="InfoDot"/>
+        <meta property="og:description" content="Discord Bot with a few commands and which gives you information.. Try InfoDot today!"/>
+        <meta property="og:image" SameSite="Strict" content="/asset/id/infodotdevelopments.png"/>
+        <meta property="og:site_name" content="InfoDot"/>
+        <meta name="og:url" SameSite="Strict" content="https://infodot.vipedev.com/">
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" SameSite="Strict" content="/asset/id/infodotdevelopments.png" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="InfoDot" />
+        <!-- Theme colour allows you to change the accent colour to the embed on some platforms! -->
+        <meta name="theme-color" content="#18A8D4">
+
+        <!-- This is the site meta data used for SEO and other useful things, like displaying the site name in your browser! -->
+        <title>InfoDot Developments</title> <!-- This is the site title, change it to your site's name! -->
+        <meta name="description" content="Discord Bot with a few commands and which gives you information.. Try InfoDot today!">
+        <meta name="keywords" content="infodot, discord, bot, application, dc, information, discordbot, dc bot">
+        <meta name="author" content="InfoDot Founder">
+
+    </head>
+
+    <body>
+        <!-- This is the navbar, there are two sections for this, one has the desktop navbar and the other has the mobile navbar, you can update the links within this by changing the <a></a> tags! -->
+        <!-- This is the desktop navbar -->
+        <div class="justify-content-center d-none d-sm-none d-md-block d-lg-block d-xl-block noSidePadding">
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-nav justify-content-center d-none d-sm-none d-md-block d-lg-block d-xl-block nav-padding align-items-center">
+                <div class="container align-items-center">
+                    <a class="navbar-brand" href="/">
+                        <!-- This code links to the logo image, you can change the path here and install a new image in your project. -->
+                        <img class="logosvg" src="/asset/id/infodotlogo.png" alt="Xento" height="75px"/>
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-end logo-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                            
+                        </li>
+                            <a class="nav-link" href="#">COMMANDS</a>
+                            <a class="nav-link" href="#">TERMS OF SERVICE</a>
+                            <a class="nav-link" href="#">PRIVACY POLICY</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- This is the mobile navbar! -->
+        <div class="noSidePadding d-block d-sm-block d-md-none d-lg-none d-xl-none">
+            <nav class="navbar navbar-expand-sm bg-nav fixed-top navbar-light nav-padding">
+                <a class="navbar-brand" href="../">
+                    <!-- This code links to the logo image, you can change the path here and install a new image in your project. -->
+                    <img src="/asset/id/infodotlogo.png" alt="Xento" height="50px"/>
+                </a>
+                <button class="navbar-toggle justify-self-end" type="button" onclick="openNav()">
+                    &#9776;
+                </button>
+                <div id="myNav" class="overlay">
+                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content text-center">
+                        <a href="../">HOME</a>
+                        <a href="#">COMMANDS</a>
+                        <a href="#">TERMS OF SERVICE</a>
+                            <a href="#">PRIVACY POLICY</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid home-header align-items-center d-flex">
+            <!-- Main -->
+            <div class="container-fluid text-center align-items-center">
+                <div class="row header-content my-auto d-flex">
+                    <div class="my-auto">
+                            <!-- This code links to the logo wordmark, you can change the path here and install a new image in your project. -->
+                            <img class="header-image" src="/asset/id/infodotdevelopments.png">
+                        <h1 class="header-text">"404 Error"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <!-- This is the site footer, this is where you should link to all your pages across the internet, it is not mandatory but would be appreciated if you keep our github link in here! (https://github.com/xentoproject) -->
+        <footer class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <!-- This code links to the logo wordmark, you can change the path here and install a new image in your project. This also acts as a home link. -->
+                        <a href="../"><img src="/asset/id/infodotdevelopments.png" alt="IDLOGO" width="125px"/></a>
+                    <small class="d-block mt-3 mb-3">© InfoDot Developments | 2024</small>
+                    </div>
+                    <div class="col-12 col-md first-footer-group">
+                    <!-- This is a footer link list -->
+                    <h5>Documents</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="footer-link-item"><a class="footer-link" href="">Terms of Service</a></li>
+                        <li class="footer-link-item"><a class="footer-link" href="">Privacy Policy</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-12 col-md">
+                    <!-- This is a footer link list -->
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="footer-link-item"><a class="footer-link" href="">Open Positions</a></li>
+                        <li class="footer-link-item"><a class="footer-link" href="">InfoDot Developments</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-12 col-md">
+                    <!-- This is a footer link list -->
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="footer-link-item"><a class="footer-link" href="mailto:infodot.bot@gmail.com">infodot.bot@gmail.com</a></li>
+                        <li class="footer-link-item"><a class="footer-link" href="discord.gg/8xBTCPnHvT">Support Server</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-12 col-md">
+                    <!-- This is a footer link list -->
+                    <h5>More</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="footer-link-item"><a class="footer-link" href="https://discord.com/oauth2/authorize?client_id=1218509239761502328">Invite the Bot</a></li>
+                        <li class="footer-link-item"><a class="footer-link" href="https://discord.gg/dfUKuVvy5h">Appeals Server</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- This is the icon row, you can copy other icons from https://simpleicons.org -->
+                <div class="row justify-content-center">
+                    <!-- GitHub -->
+                    <a href="https://github.com/" target="_blank"><svg class="footer-social-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS - This links to the Javascript used to open and close the navbar for mobile users -->
+        <script src="script.js"></script>
+    </body>
+</html>
