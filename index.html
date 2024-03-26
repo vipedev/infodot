@@ -25,6 +25,8 @@
         <link rel="apple-touch-icon" sizes="180x180" SameSite="Strict" href="/asset/favicon/apple-touch-icon.png">
         <link rel="icon"  sizes="32x32" SameSite="Strict" href="/asset/id/infodotlogo.png">
         <link rel="icon"  sizes="16x16" SameSite="Strict" href="/asset/id/infodotlogo.png">
+        <!-- Webmanifests are not supported on autocode and so the file for this is only available on our GitHub version -->
+        <link rel="manifest" href="site.webmanifest">
 
         <!-- This is the site meta data that is displayed in embeds on platforms like Discord when the site is linked! -->
         <!-- Open Graph tags -->
@@ -32,7 +34,7 @@
         <meta property="og:description" content="Discord Bot with a few commands and which gives you information.. Try InfoDot today!"/>
         <meta property="og:image" SameSite="Strict" content="/asset/id/infodotdevelopments.png"/>
         <meta property="og:site_name" content="InfoDot"/>
-        <meta name="og:url" content="https://infodot.vipedev.com/">
+        <meta name="og:url" SameSite="Strict" content="https://infodot.vipedev.com/">
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" SameSite="Strict" content="/asset/id/infodotdevelopments.png" />
         <meta name="twitter:card" content="summary_large_image">
@@ -166,7 +168,7 @@
                 <div class="row">
                     <div class="col-12 col-md">
                         <!-- This code links to the logo wordmark, you can change the path here and install a new image in your project. This also acts as a home link. -->
-                        <a href="../"><img src="/asset/id/infodotdevelopments.png" alt="IDLOGO" width="125px"/></a>
+                        <a href="/index.html"><img src="/asset/id/infodotdevelopments.png" alt="IDLOGO" width="125px"/></a>
                     <small class="d-block mt-3 mb-3">© InfoDot Developments | 2024</small>
                     </div>
                     <div class="col-12 col-md first-footer-group">
@@ -190,7 +192,7 @@
                     <h5>Contact Us</h5>
                     <ul class="list-unstyled text-small">
                         <li class="footer-link-item"><a class="footer-link" href="mailto:infodot.bot@gmail.com">infodot.bot@gmail.com</a></li>
-                        <li class="footer-link-item"><a class="footer-link" href="discord.gg/8xBTCPnHvT">Support Server</a></li>
+                        <li class="footer-link-item"><a class="footer-link" href="https://discord.gg/8xBTCPnHvT">Support Server</a></li>
                     </ul>
                     </div>
                     <div class="col-12 col-md">
